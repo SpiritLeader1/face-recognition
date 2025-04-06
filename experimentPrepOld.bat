@@ -32,6 +32,12 @@ move "%ORIGINPATH%\z(2)_backed_up - Copy\Faces (not used)_copy\Old\testtask_face
 cd /d "%ORIGINPATH%"
 @echo Test Task Faces Unseen Completed.
 
+REM Combine the faces for test task
+python UniteTestTask_old.py
+del "%ORIGINPATH%\z(2)_backed_up - Copy\Faces (not used)_copy\Young\testtask_face_not_used_old.xlsx"
+del "%ORIGINPATH%\z(2)_backed_up - Copy\Faces Scenes - Kopya\Young\testtask_face_used_old.xlsx"
+@echo Test Task Combination Completed.
+
 @echo Experiment preparation script for Old images completed.
 pause
 exit

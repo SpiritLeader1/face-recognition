@@ -21,6 +21,6 @@ for path, subdirs, files in os.walk(root):
             new_loc.append(os.path.join(root, placeholder))
             intactImageLocation.append(random.choice(x))
 print(len(face_loc),len(intact_loc),len(rearrange_loc),len(new_loc))
-resim_dict = {"isSeen":isSeen,"Face_location":face_loc, "Intact_location":intact_loc,"Rearranged_location":rearrange_loc,"New_location":new_loc,"intactImageLocation": intactImageLocation}
+resim_dict = {"isSeen":isSeen,"Face_location":face_loc, "img1":intact_loc,"img2":rearrange_loc,"img3":new_loc,"intactImageLocation": intactImageLocation}
 df = pd.DataFrame(resim_dict)
 df.to_excel("testtask_face_not_used_old.xlsx",index=False)
