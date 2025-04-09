@@ -34,8 +34,8 @@ cd /d "%ORIGINPATH%"
 
 REM Combine the faces for test task
 python UniteTestTask_young.py
-del "%ORIGINPATH%\z(2)_backed_up - Copy\Faces (not used)_copy\Young\testtask_face_not_used_young.xlsx"
-del "%ORIGINPATH%\z(2)_backed_up - Copy\Faces Scenes - Kopya\Young\testtask_face_used_young.xlsx"
+del "%ORIGINPATH%\testtask_face_not_used_young.xlsx"
+del "%ORIGINPATH%\testtask_face_used_young.xlsx"
 @echo Test Task Combination Completed.
 
 @echo Experiment preparation script for Young images completed.
